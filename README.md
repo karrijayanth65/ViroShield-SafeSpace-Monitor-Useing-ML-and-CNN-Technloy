@@ -1,8 +1,15 @@
 # ViroShield-SafeSpace-Monitor-Useing-ML-and-CNN-Technology
 An AI and IoT-driven solution to enforce COVID-19 protocols. Features mask detection using Convolutional Neural Networks (CNNs) and temperature monitoring with advanced sensors. Provides real-time email and audio/visual alerts, integrated via Raspberry Pi. Utilizes NumPy, Pandas, Matplotlib, and Plotly for robust data management and visualization.
-#pyCode
-import cv2
 
+#pyCode
+
+
+
+
+
+
+
+import cv2
 import numpy as np
 import datetime
 import subprocess
@@ -31,7 +38,6 @@ while True:
     net.setInput(blob)
     output_layers_names = net.getUnconnectedOutLayersNames()
     layerOutputs = net.forward(output_layers_names)
-
     boxes = []
     confidences = []
     class_ids = []
